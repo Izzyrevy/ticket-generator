@@ -1,0 +1,56 @@
+.attendee-details {
+    width: fit-content;
+    background-color: #041E23 ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+  }
+  
+  .attendee-details h2 {
+    color: #4CAF50; 
+    text-align: center;
+  }
+  
+  .attendee-details label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .attendee-details input,
+  .attendee-details textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #388E3C; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #66BB6A; 
+  }
+  
+  .error-message {
+    color: #d32f2f; 
+    font-size: 0.9em;
+    margin-top: 5px;
+  }

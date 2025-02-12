@@ -1,0 +1,59 @@
+.ticket-confirmation {
+    width: fit-content;
+    background-color: #041E23 ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+  }
+  
+  .ticket-confirmation h2 {
+    color: #4CAF50; 
+    text-align: center;
+  }
+  
+  .ticket-confirmation p {
+    color: #333; 
+    text-align: center;
+  }
+
+  .profile-pic-container {
+    display: flex;
+    justify-content: center; 
+    margin: 15px; 
+  }
+  
+  .profile-pic {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 10%; 
+  }
+
+  .confirmation-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    border: 2px solid #ccc;
+    background-color: #A5D6A7; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; 
+  }
+
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+
+  .ticket-selection {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .confirmation-message {
+    text-align: center;
+  }
+  
+  
