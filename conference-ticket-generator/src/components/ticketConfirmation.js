@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AttendeeDetailsDisplay from './attendeeDetails';
 import './ticketConfirmation.css';
 
-const TicketConfirmation = ({ ticketData, attendeeData }) => {
+const TicketConfirmation = ({ ticketData, attendeeData, onBack }) => {
     const [ticketBooked, setTicketBooked] = useState(false);
   
     const handleSubmit = async (event) => {
@@ -45,9 +45,6 @@ const TicketConfirmation = ({ ticketData, attendeeData }) => {
         URL.revokeObjectURL(url); 
     };
 
-    const onCancel = () => {
-        setTicketBooked(false);
-    };
   
     return (
         <div className="ticket-confirmation">
@@ -113,7 +110,7 @@ const TicketConfirmation = ({ ticketData, attendeeData }) => {
                 </div>
             )  } 
             <div className="button-group">
-                        <button onClick={onCancel}>Book Another Ticket</button>
+                        <button onClick={onBack}>Book Another Ticket</button>
                         <button onClick={downloadTicket}>Download Ticket</button>
                     </div>
         </div>

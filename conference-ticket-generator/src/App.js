@@ -43,9 +43,11 @@ const TicketBookingApp = () => {
         <TicketConfirmation
           ticketData={ticketData}
           attendeeData={attendeeData}
+          onBack={handleBack}
         />
       )}
     </div>
+    
   );
 };
 

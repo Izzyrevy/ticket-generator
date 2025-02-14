@@ -4,6 +4,7 @@ const TicketSelection = ({ onNext, onCancel }) => {
   const [selectedTicket, setSelectedTicket] = useState(null);
   const [numberOfTickets, setNumberOfTickets] = useState(1);
 
+
   const handleTicketSelection = (ticketType) => {
     setSelectedTicket(ticketType);
   };
