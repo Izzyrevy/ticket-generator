@@ -1,22 +1,104 @@
 .ticket-confirmation {
-    width: fit-content;
-    background-color: #041E23 ;
+    width: 100%;
+    max-width: 700px;
+    background:linear-gradient(to top, #0a2429c4, #0f373d);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
   }
-  
-  .ticket-confirmation h2 {
-    color: #4CAF50; 
-    text-align: center;
+
+  .ticket-confirm{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
   }
   
+  .ticket-confirm h3{
+    color: #fff;
+    margin: 0;
+    font-family: "JejuMyeongjo", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+
+  .ticket-confirm p{
+    color: #fff;
+    margin: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+  }
+  
+  .ticket-confirmation h2 {
+    color: #fff;
+    font-family: 'Alatsi', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 500;
+  }
+
   .ticket-confirmation p {
-    color: #333; 
+    color: #fff; 
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .ticket-booked-box {
+    width: 100%;
+    max-width: 600px;
+    background-image: url('assets/bg-ticket.png');
+    background-size: contain;
+    /* padding: 2rem; */
+    border: 1px solid #09798a;
+    border-radius: 32px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto 70px auto;
+
+    position: relative;
+  }
+
+  .ticket-booked-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; 
+    z-index: -1;        
+    transform: translate(10px, 10px);
+    border-radius: 10px;
+  }
+
+  .ticket-booked {
+    width: 100%;
+    max-width: 500px;
+    background:linear-gradient(to top, #041E23, #041E23);
+    padding: 2rem;
+    border: 1px solid #09798a;
+    border-radius: 32px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding-bottom: 30px;
+  }
+
+  .ticket-booked h3 {
+    font-family: "Road Rage", Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0;
+    color: #fff;
     text-align: center;
   }
 
+  .ticket-booked p {
+    color: #fff; 
+    font-size: small;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
   .profile-pic-container {
     display: flex;
     justify-content: center; 
@@ -24,27 +106,45 @@
   }
   
   .profile-pic {
-    width: 100px; 
-    height: 100px; 
+    width: 100%;
+    border: 5px solid #09798a;
+    max-width: 200px; 
+    margin: 0 auto;
     border-radius: 10%; 
   }
 
   .confirmation-details {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 10px;
-    border: 2px solid #ccc;
-    background-color: #A5D6A7; 
-    padding: 20px;
-    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 10px; 
   }
 
   .detail-item {
     display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
+    border: 1px solid #184046;
+    gap: 5px;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #fff;
+    padding: 10px;
+    overflow-wrap: break-word;
+  }
+
+  .detail-item p{
+    color: rgba(235, 253, 244, 0.438);
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .detail-item span{
+    overflow-wrap: break-word;
+    font-size: 12px;
+    flex: 1;
   }
 
   .ticket-selection {
@@ -56,4 +156,22 @@
     text-align: center;
   }
   
+  button {
+    background-color: transparent; 
+    border: 1px solid #12464E;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #0ca8c0;
+    font-family: "JejuMyeongjo", Arial, Helvetica, sans-serif;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  button:hover {
+    color: #ffffff; 
+    background-color: #24A0B5; 
+  }
   
