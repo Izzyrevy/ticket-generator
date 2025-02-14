@@ -24,8 +24,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>conference-ticket-generator</title>
     <script src="https://upload-widget.cloudinary.com/latest/global/all.js" type="text/javascript">  
+        // This is a workaround for the "index.html" file not being found
+        if (window.location.hostname === "localhost") {
+            // This is a workaround for the "index.html" file not being found
+            window.location.href = "http://localhost:3000";
+        }
     </script>
   </head>
   <body>

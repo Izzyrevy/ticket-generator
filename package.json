@@ -1,8 +1,8 @@
 {
-  "name": "my-react-app",
+  "name": "conference-ticket-generator",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://<username>.github.io/<izzyrevy>", 
+  "homepage": "https://izzyrevy.github.io/ticket-generator/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -17,6 +17,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-scripts": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
